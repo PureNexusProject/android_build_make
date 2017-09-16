@@ -124,9 +124,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     system/core/rootdir/init.zygote32.rc:root/init.zygote32.rc
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=unknown
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/runtime_libart.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product-if-exists, frameworks/base/data/fonts/fonts.mk)
