@@ -198,7 +198,6 @@ def AppendAssertions(script, info_dict, oem_dicts=None):
   oem_props = info_dict.get("oem_fingerprint_properties")
   if not oem_props:
     device = GetBuildProp("ro.product.device", info_dict)
-    script.AssertDevice(device)
   else:
     if not oem_dicts:
       raise common.ExternalError(
